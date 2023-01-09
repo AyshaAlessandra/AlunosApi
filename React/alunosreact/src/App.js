@@ -15,6 +15,7 @@ function App() {
   
   const [modalIncluir, setModalIncluir]=useState(false);
   const [modalEditar, setModalEditar]=useState(false);
+  const [modalExcluir, setModalExcluir] = useState(false);
 
   const [alunoSelecionado, setAlunoSelecionado] = useState({
     id: '',
@@ -25,8 +26,8 @@ function App() {
 
   const selecionarAluno = (aluno, opcao) => {
     setAlunoSelecionado(aluno);
-    (opcao === "Editar") &&
-      abrirFecharModalEditar();
+    (opcao === "Editar") ?
+      abrirFecharModalEditar() : abrirFecharModalExcluir();
   }
 
   const abrirFecharModalIncluir=()=>{
@@ -35,6 +36,10 @@ function App() {
 
   const abrirFecharModalEditar = () => {
     setModalEditar(!modalEditar);
+  }
+
+  const abrirFecharModalExcluir = () => {
+    setModalExcluir(!modalExcluir);
   }
 
   const handleChange = e => {
@@ -87,14 +92,29 @@ function App() {
       })
   }
 
+  const pedidoDelete = async () => {
+    await axios.delete(baseUrl + "/" + alunoSelecionado.id)
+      .then(response => {
+        setData(data.filter(aluno => aluno.id !== response.data));
+        setUpdateData(true);
+        abrirFecharModalExcluir();
+      }).catch(error => {
+        console.log(error);
+      })
+  }
+
   useEffect(() => {
-    pedidoGet();
-  })
+    if(updateData){
+      pedidoGet();
+    setUpdateData(false);
+    }
+  },[updateData])
 
   return (
     <div className="aluno-container">
       <br />
       <h3>Cadastro de Alunos</h3>
+      <br/>
       <header className="App-header">
         <img src={logoCadastro} alt='Cadastro' />
         <button className='btn btn-success' onClick={() => abrirFecharModalIncluir()}>Incluir Novo Aluno</button>
@@ -174,6 +194,15 @@ function App() {
         </ModalFooter>
       </Modal>
 
+      <Modal isOpen={modalExcluir}>
+        <ModalBody>
+          Confirma a exclusão deste(a) aluno(a) : {alunoSelecionado && alunoSelecionado.nome} ?
+        </ModalBody>
+        <ModalFooter>
+          <button className="btn btn-danger" onClick={() => pedidoDelete()} > Sim </button>
+          <button className="btn btn-secondary" onClick={() => abrirFecharModalExcluir()}> Não </button>
+        </ModalFooter>
+      </Modal>
 
     </div>
   );
