@@ -27,7 +27,7 @@
    <br>
 
    <div class="Swagger">
-      <h1 style="font-weight:bold">📌 API de Produto</h1>
+      <h1 style="font-weight:bold">📌 API de Alunos</h1>
        <ul>
          <li>Todos os endipoints do microsserviço ainda estão abertos.</li>
       </ul>
@@ -48,7 +48,6 @@
 + node js
 + Dotnet 6
 
-<br>
 
 ## Como rodar?
 
