@@ -20,7 +20,7 @@
          <img width="900px" alt="Cadastro de Alunos" title="Gif Readme" src="Assets/Cadastro_de_alunos.png" />
          <img width="900px" alt="Criar novo aluno" title="Gif Readme" src="Assets/Criar_novo_aluno.png" />
          <img width="900px" alt="Editar Aluno" title="Gif Readme" src="Assets/Modal_editar.png" />
-         <img width="900px" alt="Deletar Aluno" title="Gif Readme" src="Assets/Modal_Excluir.png" />
+         <img width="900px" alt="Deletar Aluno" title="Gif Readme" src="Assets/Modal_excluir.png" />
       </div>
    </div>
 
