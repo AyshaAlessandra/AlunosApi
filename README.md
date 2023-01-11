@@ -29,7 +29,8 @@
    <div class="Swagger">
       <h1 style="font-weight:bold">📌 API de Alunos</h1>
        <ul>
-         <li>Todos os endipoints do microsserviço ainda estão abertos.</li>
+         <li>Todos os endipoints do microsserviço Estão protegidos</li>
+         <li>Foi criado um controller para se registrar e fazer login, assim, tendo acesso aos endpoints.</li>
       </ul>
       <div align="center">
          <img width="900px" alt="Readme" title="Gif Readme" src="Assets/Swagger.png"/>
