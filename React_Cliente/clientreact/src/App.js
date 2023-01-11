@@ -1,8 +1,11 @@
 import React from 'react';
+import Login from './pages/Login';
+import './Global.css'
+
 
 function App() {
   return (
-    <h1>Teste</h1>
+    <Login />
   );
 }
 
