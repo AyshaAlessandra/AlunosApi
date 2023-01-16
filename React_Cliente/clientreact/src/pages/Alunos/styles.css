@@ -30,18 +30,11 @@
 }
 
 .aluno-container header button{
-    height: 30px;
+    height: 60px;
     width: 30px;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #DCDCE6;
-    background: transparent;
+    border: none;
     margin-left: 16px;
-    transition: border-color 0.5s;
-}
-
-.aluno-container header button:hover{
-    border-color: #201465;
 }
 
 .aluno-container h1 {

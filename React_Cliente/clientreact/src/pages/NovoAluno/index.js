@@ -74,7 +74,7 @@ export default function NovoAluno() {
                     <FiUserPlus size="105" color="#17202a" />
                     <h1>{alunoId === '0' ? 'Incluir Novo Aluno' : 'Atualizar Aluno'}</h1>
                     <Link className="back-link" to="/alunos">
-                        <FiCornerDownLeft size="25" color="#17202a" /> Retornar
+                        <FiCornerDownLeft size="25" color="#17202a" />
                     </Link>
                 </section>
 
