@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import api from '../../services/api';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 import logoImage from '../../assets/login.png'
 
@@ -49,6 +49,7 @@ export default function Login() {
                         onChange={e => setPassword(e.target.value)}
                     />
                     <button class="button" type="submit">Login</button>
+                    <Link className="button" to="/cadastro">Cadastro</Link>
                 </form>
             </section>
         </div>
