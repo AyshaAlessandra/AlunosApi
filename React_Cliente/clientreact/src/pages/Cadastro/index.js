@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './styles.css';
-import logoImage from '../assets/login.png'
+import logoImage from '../../assets/login.png'
 import { useNavigate,Link } from 'react-router-dom';
 import { FiCornerDownLeft } from 'react-icons/fi';
-import api from '../services/api';
+import api from '../../services/api';
 
 export default function Cadastro() {
 

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Login from "./pages/Login";
 import Alunos from "./pages/Alunos";
 import NovoAluno from "./pages/NovoAluno";
-import Cadastro from "./Cadastro";
+import Cadastro from "./pages/Cadastro";
 
 export default function Rout() {
     return (
