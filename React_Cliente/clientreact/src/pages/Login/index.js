@@ -29,7 +29,7 @@ export default function Login() {
 
             history('/alunos');
         } catch (error) {
-            alert('O login falhou ' + error)
+            alert('Senha ou Email incorreto. ' + error)
         }
     }
 
