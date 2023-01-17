@@ -94,7 +94,7 @@ export default function Alunos() {
                 />
             </form>
 
-            <h1>Relação de Alunos</h1>
+            <h1>Relação de Cadastro dos Alunos</h1>
             {searchInput.length > 1 ? (
                 <ul>
                     {filtro.map(aluno => (

@@ -38,7 +38,7 @@ export default function Login() {
             <section className="form">
                 <img src={logoImage} alt="Login" id="img1" />
                 <form onSubmit={login}>
-                    <h1>Cadastro de Alunos</h1>
+                    <h1>Login</h1>
 
                     <input placeholder="Email"
                         value={email}
