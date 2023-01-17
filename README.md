@@ -3,8 +3,8 @@
 
 <h1 style="font-weight:bold">📘 Sobre</h1>
 <p>
-   Um projeto simples criado com o objetivo de consumir a api com react. O projeto consiste em um cadastro de 
-   alunos, onde da para fazer os principais Crud da aplicação, deletar, atualizar e criar.
+   Um projeto simples criado com o objetivo de consumir a API com React. O projeto consiste em um cadastro de 
+   alunos, onde é possível realizar as principais tarefas de atualizar, excluir e incluir dados do aluno, também conseguindo pesquisar pelo nome.
 </p> 
 
 <br>
@@ -14,14 +14,10 @@
    <div class="Front">
       <h1 style="font-weight:bold">📌 FrontEnd</h1>
       <ul>
-         <li>Essa visão que irá ter ao fazer alguma requisição com react.</li>
+         <li>Caso tente se cadastrar ou fazer o login sem alguma informação, aparece um alerta.</li>
       </ul>
       <div align="center">
-         <img width="900px" alt="Cadastro de Alunos" title="Gif Readme" src="Assets/Cadastro_de_alunos.png" />
-         <img width="900px" alt="Criar novo aluno" title="Gif Readme" src="Assets/Criar_novo_aluno.png" />
-         <img width="900px" alt="Editar Aluno" title="Gif Readme" src="Assets/Modal_editar.png" />
-         <img width="900px" alt="Deletar Aluno" title="Gif Readme" src="Assets/Modal_excluir.png" />
-      </div>
+         <img width="900px" alt="Cadastro de Alunos" title="Gif Readme" src="Assets/Funcionamento.gif" />
    </div>
 
    <br>
